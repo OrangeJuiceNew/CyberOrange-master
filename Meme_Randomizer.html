@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cyber Orange - Meme Randomizer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in"></div>
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Cyber Orange</a>
+				</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Articles</a></li>
+					<li><a href="Editions.html">Editions</a></li>
+					<li class="active"><a href="Memes.html">Memes</a></li>
+					<li><a href="Clubs.html">Clubs</a></l>
+					<li><a href="StudentProfile.html">Student Profiles</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://discord.gg/6PnsPZBPUp" class="icon brands" target="_blank"><img src="images/Discord_Logo_Header.png" class="gray_to_orange_image_header"><span class="label">Discord</span></a></li>
+					<li><a href="https://www.pxu.org/" class="icon brands" target="_blank"><img src="images/PXU_Orange_Header.png" class="gray_to_orange_image_header"><span class="label">PXU</span></a></li>
+					<li><a href="https://www.facebook.com/TGBHSBRUINS/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/tgbhs_bruins/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+					<li><a href="https://twitter.com/tgbhs_bruins?lang=en" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				</ul>
+			</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+						<header>
+                            <h2 class="Title_Name_Main">Meme Randomizer</a></h2>
+                        </header>
+
+						<!-- Meme Image Randomized -->
+						<div id="meme">
+							<img class = "center" src="images/Memes/Meme_Randomizer_Meme.png">
+						</div>
+
+
+						<!-- Button -->
+						<ul class="actions special">
+							<li><button onclick="showMeme()">Randomize!</button></li>
+						</ul>       
+					</div>
+
+					<!-- JavaScript -->
+					<script>
+						removeMeme();
+						removeMeme();
+						function memeIndex() {
+							number_of_memes = 58 //Change this number when we have more memes and add in more else if statements below
+							return (Math.floor(Math.random() * (number_of_memes)) + 1); //The maximum is exclusive and the minimum is inclusive
+						}
+
+						function removeMeme() {
+							let div = document.getElementById("meme");
+							div.removeChild(div.childNodes[0]);
+						}
+
+						function showMeme() {
+							removeMeme();
+							let div = document.getElementById("meme");
+							let image = document.createElement("img");
+							meme_number = memeIndex();
+							if (meme_number == 1) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/802768030840782848/4upbjd.jpg";
+							} else if (meme_number == 2) {
+								image.src = "https://i.imgflip.com/4v2b4f.jpg"
+							} else if (meme_number == 3) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803119659121377280/4v1vtf.png";
+							} else if (meme_number == 4) {
+								image.src = "images/Memes/Beatles Sun.jpg"
+							} else if (meme_number == 5) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803117807905669120/4unp90.jpg";
+							} else if (meme_number == 6) {
+								image.src = "images/Memes/Shien Order.jpg"
+							} else if (meme_number == 7) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803127959069655080/4v31v2.png";
+							} else if (meme_number == 8) {
+								image.src = "https://cdn.ebaumsworld.com/2020/07/23/043954/86327172/funny-2020-memes-71.jpg";
+							} else if (meme_number == 9) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803118916623663104/4ubkrp.png";
+							} else if (meme_number == 10) {
+								image.src = "https://ichef.bbci.co.uk/images/ic/704xn/p072ms6r.jpg"
+							} else if (meme_number == 11) {
+								image.src = "https://media-assets-01.thedrum.com/cache/images/thedrum-prod/s3-screenshot_2020-02-17_at_1.12.11_pm--default--940.png";
+							} else if (meme_number == 12) {
+								image.src = "images/Memes/School-Memes-50.jpg"
+							} else if (meme_number == 13) {
+								image.src = "images/Memes/here-are-the-2020-back-to-school-memes-even-though-kids-shouldn-t-be-going-back-to-school-1.png";
+							} else if (meme_number == 14) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803118872588058634/4u9n0r.png";
+							} else if (meme_number == 15) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803128226159394856/4u91ig.png";
+							} else if (meme_number == 16) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803119529156542464/4um4gs.png";
+							} else if (meme_number == 17) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/803135873943994388/4tsika.png"
+							} else if (meme_number == 18) {
+								image.src = "images/Memes/Meme_Randomizer_Meme.png"
+							} else if (meme_number == 19) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763826118524933/892a7c7.jpg"
+							} else if (meme_number == 20) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763826270175282/Screenshot_20201229-130118.png"
+							} else if (meme_number == 21) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763826500599818/Screenshot_20200914-204526.png"
+							} else if (meme_number == 22) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763826739150858/Screenshot_20200530-215558.png"
+							} else if (meme_number == 23) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763826945327114/Screenshot_20200619-211609.png"
+							} else if (meme_number == 24) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763827217039360/Screenshot_20200812-204528.png"
+							} else if (meme_number == 25) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810763857085071380/Screenshot_20200412-170148.png"
+							} else if (meme_number == 26) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810774981306875934/957363d.jpg"
+							} else if (meme_number == 27) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810776034282438667/7229bab.jpg"
+							} else if (meme_number == 28) {
+								image.src = "https://i.redd.it/hft24g5li2q21.jpg"
+							} else if (meme_number == 29) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810777159579992084/680de3d.jpg"
+							} else if (meme_number == 30) {
+								image.src = "https://img.buzzfeed.com/buzzfeed-static/static/2018-10/25/17/asset/buzzfeed-prod-web-01/sub-buzz-9725-1540501605-2.png?downsize=600:*&output-format=auto&output-quality=auto"
+							} else if (meme_number == 31) {
+								image.src = "https://i.pinimg.com/originals/d0/4a/69/d04a69236ed0a2f5b3a854c810a7e1a3.jpg"
+							} else if (meme_number == 32) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810778434187296788/valentines-day-memes-main.jpg"
+							} else if (meme_number == 33) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810778513028022302/28c8072.jpg"
+							} else if (meme_number == 34) {
+								image.src = "https://www.soakingcool.com/wp-content/uploads/2018/02/Presidents-Day-Meme-Pic.jpg"
+							} else if (meme_number == 35) {
+								image.src = "https://i.ytimg.com/vi/BHwtKKtVerQ/maxresdefault.jpg"
+							} else if (meme_number == 36) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810779075551428609/613e68c.jpg"
+							} else if (meme_number == 37) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/810779225359253514/8e3760e.jpg"
+							} else if (meme_number == 38) {
+								image.src = "https://i.pinimg.com/736x/02/8b/7d/028b7d99e31ed3f1388a09380118f879.jpg"
+							} else if (meme_number == 39) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667189808529438/1597583875900.jpg"
+							} else if (meme_number == 40) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/825569421938262046/w1mbe60vimp61.png"
+							} else if (meme_number == 41) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/825570488511758368/zcref3ap8mp61.png"
+							} else if (meme_number == 42) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/825570624025002035/z491s3rf5kp61.png"
+							} else if (meme_number == 43) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/825571863966253096/dk7nkc2ucnp61.png"
+							} else if (meme_number == 44) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826643705317556284/unknown.png"
+							} else if (meme_number == 45) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826666352999661569/5863134.jpg"
+							} else if (meme_number == 46) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826666353787142175/b686aa7.jpg"
+							} else if (meme_number == 47) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826666353200857108/eb816a1.jpg"
+							} else if (meme_number == 48) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826666353489739796/9af4a2f.jpg"
+							} else if (meme_number == 49) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826666354010488863/e5cef3b.jpg"
+							} else if (meme_number == 50) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667189586362398/8eb2a09.jpg"
+							} else if (meme_number == 51) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667189389885450/130e3a7.jpg"
+							} else if (meme_number == 52) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667189166669844/732940d.jpg"
+							} else if (meme_number == 53) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/825568946567774218/lmmpjhmhlnp61.png"
+							} else if (meme_number == 54) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667189981020200/john_and_jake.png"
+							} else if (meme_number == 55) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667190190080060/FYNMgss.jpg"
+							} else if (meme_number == 56) {
+								image.src = "https://cdn.discordapp.com/attachments/677520731600584735/826667190388260914/minecraftmeme.png"
+							} else if (meme_number == 57) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826667779670802442/Screenshot_20201229-130317.png"
+							} else if (meme_number == 58) {
+								image.src = "https://cdn.discordapp.com/attachments/785936562520981505/826670169929285732/e8by7lt038q61.png"
+							}
+							
+
+							
+							image.className += "center";
+							div.appendChild(image);
+						}
+					</script>
+
+
+
+						<!-- Footer -->
+						<footer id="footer">
+							<section>
+								<a href="https://outlook.office.com/mail/inbox" class="icon brands image fit gray_to_orange_image_footer" target="_blank"><img src="images/Orange_Outlook_Footer.png" style="width:40%; display:flex; right:60%;" class="center-vertical-and-horizontal"><span class="label">Outlook</span><span style="font-size:30px; padding-left: 11.5%" class="center">Contact Us</span></a>
+								<a href="https://discord.gg/6PnsPZBPUp" class="icon brands image fit gray_to_orange_image_footer" target="_blank"><img src="images/Join_Our_Orange_Juice_Newspaper_Discord.png" style="width:80%; display:flex; margin-top:0px" class="center-vertical-and-horizontal"><span class="label">Discord</span><span style="font-size:30px; padding-left: 11.5%" class="center">Join Discord</span></a>
+							</section>
+							<section class="split contact">
+								<section class="alt">
+									<h3 style="color: rgba(255, 255, 255, .9)">School Address</h3>
+									<p><span class="copy">7402 W. Catalina Drive, Phoenix, AZ 85033</span></p>
+								</section>
+								<section>
+									<h3 style="color: rgba(255, 255, 255, .9)">School Phone</h3>
+									<p><span class="copy">(602) 764-8500</span></p>
+								</section>
+								<section>
+									<h3 style="color: rgba(255, 255, 255, .9)">Club Email</h3>
+									<p><span class="copy">theorangejuicenews@gmail.com</span></p>
+								</section>
+								<section>
+									<h3 style="color: rgba(255, 255, 255, .9)">Social</h3>
+									<ul class="icons alt">
+										<ul class="icons"></ul>
+											<li><a href="https://www.pxu.org/" class="icon brands alt" target="_blank"><img src="images/Phoenix_Union_High_School_District_Orange_Footer.png"  class="gray_to_orange_image_footer" style="width: 50px; display:flex"><span class="label">PXU</span></a></li>
+											<li><a href="https://www.facebook.com/TGBHSBRUINS/" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+											<li><a href="https://www.instagram.com/tgbhs_bruins/" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+											<li><a href="https://twitter.com/tgbhs_bruins?lang=en" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+											<li><a href="https://discord.gg/6PnsPZBPUp" class="icon brands alt fa-discord" target="_blank"><span class="label">Discord</span></a></li>
+										</ul>
+									</ul>
+								</section>
+							</section>
+						</footer>
+					<script>
+						var copy = document.querySelectorAll(".copy"); 
+
+						for (const copied of copy) { 
+						copied.onclick = function() { 
+							document.execCommand("copy"); 
+						};  
+						copied.addEventListener("copy", function(event) { 
+							event.preventDefault(); 
+							if (event.clipboardData) { 
+							event.clipboardData.setData("text/plain", copied.textContent);
+							console.log(event.clipboardData.getData("text"))
+							alert("You copied the text below!" + "\r\n" + "\r\n" + copied.innerHTML)
+							};
+						});
+						};
+						
+					</script>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
