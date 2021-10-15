@@ -1,13 +1,11 @@
-Massively by HTML5 UP
+Cyber Orange By Brian Chavez and Steven Le
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+Website Built For the Orange Juice Newspaper so that even during covid years this club can move forward.
+The Website will continue forward so that there is no limit to the newspaper progress and history.
+This website is really easy to edit and make and publish
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
